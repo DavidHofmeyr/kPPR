@@ -1,0 +1,15 @@
+Package: kPPR
+Type: Package
+Title: Projection Pursuit Regression using Local Linear Kernel Smoothing
+Version: 0.1.0
+Author: David P. Hofmeyr
+Maintainer: David P. Hofmeyr <dhofmeyr@sun.ac.za>
+Description: Implements Friedman's PPR model based on a local linear kernel smoother. Unlike the base
+    function ppr(), which uses iterative reweighted least squares, the present implementation uses
+    exact gradient based optimisation. This makes this implementation slower on low-dimensional problems,
+    but potentially substantially faster in higher dimensions.
+License: GPL
+Encoding: UTF-8
+Depends: Rcpp (>= 0.12.16), glmnet
+LinkingTo: Rcpp, RcppArmadillo
+LazyData: true

@@ -1,0 +1,5 @@
+useDynLib(kPPR, .registration=TRUE)
+exportPattern("^[[:alpha:]]+")
+importFrom(Rcpp, evalCpp)
+importFrom(glmnet, glmnet)
+export("kPPR", "predict.kPPR")
