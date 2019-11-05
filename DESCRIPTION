@@ -10,6 +10,7 @@ Description: Implements Friedman's PPR model based on a local linear kernel smoo
     but potentially substantially faster in higher dimensions.
 License: GPL
 Encoding: UTF-8
-Depends: Rcpp (>= 0.12.16), glmnet
+Depends: Rcpp (>= 0.12.16)
+Imports: glmnet
 LinkingTo: Rcpp, RcppArmadillo
 LazyData: true
